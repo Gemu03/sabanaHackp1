@@ -45,5 +45,5 @@ function notas(){
 }
 
 function activate(){
-  videoPlayer.innerHTML = ``;
+  window.location.href = 'https://www.spatial.io/s/Sala-de-estudio-652b3cd0effbb44efc8d042f?share=7415085208971070239';
 }
