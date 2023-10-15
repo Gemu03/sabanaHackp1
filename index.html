@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Esteban Moreno" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniSabana SuperApp</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+    <!-- ? Añadir todas las hojas de Estilos que se requieran -->
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="video">
+        <video id="video-player" controls>
+          <source src="assets/images/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="chat">
+        <div class="chat-message">
+          <span class="chat-name" style="color: red;">Juan:</span>
+          <span class="chat-text">Hola, ¿cómo están?</span>
+        </div>
+        <div class="chat-message">
+          <span class="chat-name" style="color: blue;">María:</span>
+          <span class="chat-text">Bien, gracias. ¿Y tú?</span>
+        </div>
+        <div class="chat-message">
+          <span class="chat-name" style="color: green;">Pedro:</span>
+          <span class="chat-text">Yo también estoy bien. ¿Qué planes tienen para hoy?</span>
+        </div>
+        <div class="chat-message">
+          <span class="chat-name" style="color: red;">Juan:</span>
+          <span class="chat-text">Nada, solo estar en casa.</span>
+        </div>
+        <div class="chat-message">
+          <span class="chat-name" style="color: blue;">María:</span>
+          <span class="chat-text">Yo voy a salir a caminar.</span>
+        </div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+          <button onclick="enviarMensaje()">Enviar</button>
+        </form>
+      </div>
+      <div class="functions">
+        <section class="botonesF">
+          <button onclick="clase()">Clase</button>
+          <button onclick="pantalla()">Pantalla</button>
+          <button onclick="tablero()">Tablero</button>
+          <button onclick="notas()">Notas</button>
+          <button onclick="activate()">Entorno VR</button>
+        </section>
+        <section class="transcripcion">
+          <h2>Transcripción</h2>
+          <p id="highlighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio dolor voluptatem eligendi sapiente temporibus minima provident, eaque illo facere optio debitis! Nam repellat non tempora deserunt in odit quisquam!<br>Lorem ipsum dolor sit amet distinctio dolor voluptatem eligendi sapiente temporibus minima provident, eaque illo facere optio debitis! Nam repellat non tempora deserunt in odit quisquam!Loredolor voluptatem eligen prbitis! Nam repellat non tempora deserunt in odit quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, commodi. Reiciendis, pariatur. Possimus natus quasi similique illum dolores consectetur neque suscipit, omnis quia, sunt commodi, rerum porro? Iusto, deleniti voluptatum!</p>
+          <br>
+        </section>
+
+      </div>
+    </section>
+
+
+<!--     <button id="chatbot-toggle">Abrir Chatbot</button>
+    <div id="chatbot-container">
+      <div id="chatbot-header">
+        <h2>OpenAI Chatbot</h2>
+        <button id="chatbot-close">Cerrar</button>
+      </div>
+      <div id="chatbot-messages"></div>
+      <form id="chatbot-form">
+        <input
+          type="text"
+          id="chatbot-input"
+          placeholder="Escribe tu mensaje..."
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </div> -->
+  </body>
+
+  <script src="js/script.js"></script>
+  <!-- ? Añadir todos los js que se requieran -->
+</html>
